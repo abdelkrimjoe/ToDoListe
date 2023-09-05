@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: #2f363e;
+    border: 1px salmon solid;
+}
+.toDoList{
+    width: 30%;
+    height: 90%;
+    padding-top:20px ;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    color: aliceblue;
+    box-shadow: 0px 0px 25px 10px #e4dfdf;
+    overflow: auto;
+}
+.toDoList input[type="text"]{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    box-shadow:  5px 5px 5px 0px #000000
+}
+.toDoList input[type="text"]:focus{
+    border:1px greenyellow solid;
+}
+.tasks{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskBody{
+    background-color: rgb(41, 41, 168);
+    width: 90%;
+    min-height: 40px;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 0px #000000;
+    padding: 5px;
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.check{
+    border-radius: 50%;
+    height: 50%;
+    min-height: 25px;
+    min-width: 10%;
+    background-color: #2f363e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deletBtn{
+    width: 8%;
+    min-height: 40px;
+}
+.deletBtn span{
+    height: 100%;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    text-shadow:  8px -5px 1px  #000000;
+    border-radius: 50%;
+}
+#Checkedd{
+    display: none;
+}
+.displayy{
+    display: flex;
+}
+.back{
+    background: green;
+}
+.text{
+    text-decoration: line-through;
+}
